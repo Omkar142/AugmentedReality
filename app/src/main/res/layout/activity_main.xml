@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/sceneform_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.ar.sceneform.ux.ArFragment"/>
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/animate_idle_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/animate_kick_button"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="20dp"
+            android:text="IDLE" android:layout_marginLeft="20dp"></Button>
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/animate_kick_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="20dp"
+            android:text="KICK"></Button>
+
+
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/animate_boxing_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/animate_kick_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="20dp"
+            android:text="BOXING"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
